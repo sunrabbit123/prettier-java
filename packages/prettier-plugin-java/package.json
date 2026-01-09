@@ -1,16 +1,20 @@
 {
-  "name": "prettier-plugin-java",
-  "version": "2.8.1",
+  "name": "prettier-plugin-java-for-cjs",
+  "version": "2.8.2",
   "description": "Prettier Java Plugin",
   "type": "module",
+  "main": "./dist/index.cjs",
+  "module": "./dist/index.mjs",
   "exports": {
-    "import": {
-      "types": "./dist/index.d.mts",
-      "default": "./dist/index.mjs"
-    },
-    "require": {
-      "types": "./dist/index.d.cjs",
-      "default": "./dist/index.cjs"
+    ".": {
+      "import": {
+        "types": "./dist/index.d.mts",
+        "default": "./dist/index.mjs"
+      },
+      "require": {
+        "types": "./dist/index.d.cts",
+        "default": "./dist/index.cjs"
+      }
     }
   },
   "files": [
