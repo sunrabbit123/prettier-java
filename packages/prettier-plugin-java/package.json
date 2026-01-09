@@ -1,6 +1,6 @@
 {
   "name": "prettier-plugin-java-for-cjs",
-  "version": "2.8.2",
+  "version": "2.8.3",
   "description": "Prettier Java Plugin",
   "type": "module",
   "main": "./dist/index.cjs",
